@@ -33,7 +33,7 @@ ul {
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	outline: tomato solid;
+	/* outline: tomato solid; */
 }
 
 /* скрытые заголовки */
@@ -63,11 +63,13 @@ ul {
 	list-style: none;
 }
 
-.features-container {
-	max-width: 270px;
-}
+
 
 /* --------------------header--------------------- */
+.header {
+	border-bottom: 1px solid #ECECEC;
+	width: 1600px;
+}
 .logo {
 	color: var(--accent-color);
 	text-decoration: none;
@@ -145,6 +147,10 @@ ul {
 }
 
 /* --------------------особенности------------------ */
+.features-container {
+	max-width: 270px;
+}
+
 .features {
 	padding: 94px 215px;
 }
