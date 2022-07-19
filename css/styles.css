@@ -63,6 +63,10 @@ ul {
 	list-style: none;
 }
 
+.features-container {
+	max-width: 270px;
+}
+
 /* --------------------header--------------------- */
 .logo {
 	color: var(--accent-color);
@@ -102,6 +106,11 @@ ul {
 }
 /* ПОСТАВИЛ ДЛЯ ВИДИМОСТИ ТЕКСТА */
 
+.hero-container {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
 .hero .title {
 	color: var(--second-text-color);
 	text-transform: uppercase;
@@ -109,9 +118,10 @@ ul {
 	font-size: 44px;
 	line-height: 1.36;
 	letter-spacing: 0.06em;
-	/* margin-top: 0; */
 	margin-bottom: 30px;
-	/* max-width: 696px; */
+	max-width: 696px;
+	margin-left: auto;
+	margin-right: auto;
 }
 /* button */
 
@@ -135,10 +145,14 @@ ul {
 }
 
 /* --------------------особенности------------------ */
+.features {
+	padding: 94px 215px;
+}
 .features .title {
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 .features-text {
 	font-size: 14px;
@@ -146,24 +160,47 @@ ul {
 }
 
 /* --------------Чем мы занимаемся------------- */
-.work > .title,
-.team > .title {
+.img-work {
+	margin-bottom: 94px;
+}
+.work .title {
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
+	margin-bottom: 50px;
 }
 /* --------НАША КОМАНДА-------- */
-/* .team {
-	background-color: #f5f4fa;
-} */
-.name {
+.team-title {
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	margin-bottom: 50px;
+	padding-top: 94px;
+}
+
+.team {
+	/* background-color: #f5f4fa; */
+	text-align: center;
+}
+.img-team {
+	margin-bottom: 30px;
+}
+.title.name {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
+	margin-bottom: 10px;
 }
 .profession {
 	font-size: 16px;
 	line-height: 1.19;
+}
+.team-container {
+	width: 270px;
+	height: 368px;
+}
+.team-list {
+	padding-bottom: 94px;
 }
 
 /* ----------------------footer-------------------- */
@@ -172,23 +209,34 @@ ul {
 }
 /* ПОСТАВИЛ ДЛЯ ВИДИМОСТИ ТЕКСТА */
 .logo-white {
+	display: inline-block;
 	color: var(--second-text-color);
+	margin-bottom: 20px;
+	padding-top: 60px;
 }
 .address {
+	display: inline-block;
 	color: var(--second-text-color);
 	font-style: normal;
 	text-decoration: none;
 	font-size: 14px;
 	line-height: 1.71;
+	margin-bottom: 9px;
 }
 .link-address {
+	display: inline-block;
 	color: rgba(255, 255, 255, 0.6);
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.71;
+	margin-bottom: 9px;
 }
 
 /* -----------------PORTFOLIO---------------*/
+.filter {
+	padding-top: 94px;
+	padding-bottom: 50px;
+}
 .button {
 	background-color: #f5f4fa;
 	color: var(--title-text-color);
@@ -209,6 +257,7 @@ ul {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
+	/* margin-bottom: 4px; */
 }
 .projects-link {
 	color: currentColor;
@@ -217,4 +266,11 @@ ul {
 .projects-type {
 	font-size: 16px;
 	line-height: 1.88;
+}
+/* .filter-foto {
+	display: inline-block;
+	margin-bottom: 20px;
+} */
+.filter-text-container {
+	padding: 20px 24px;
 }
