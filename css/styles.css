@@ -30,10 +30,16 @@ ul {
 .container {
 	width: 100%;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	/* outline: tomato solid; */
+	outline: tomato solid;
+}
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+	outline: #188ce8 solid;
 }
 
 /* скрытые заголовки */
@@ -63,12 +69,11 @@ ul {
 	list-style: none;
 }
 
-
-
 /* --------------------header--------------------- */
 .header {
-	border-bottom: 1px solid #ECECEC;
-	width: 1600px;
+	border-bottom: 1px solid #ececec;
+	padding-top: 24px;
+	padding-bottom: 25px;
 }
 .logo {
 	color: var(--accent-color);
@@ -105,6 +110,8 @@ ul {
 .hero {
 	background-color: #2f303a;
 	text-align: center;
+	padding-bottom: 0;
+	padding-top: 0;
 }
 /* ПОСТАВИЛ ДЛЯ ВИДИМОСТИ ТЕКСТА */
 
@@ -122,8 +129,6 @@ ul {
 	letter-spacing: 0.06em;
 	margin-bottom: 30px;
 	max-width: 696px;
-	margin-left: auto;
-	margin-right: auto;
 }
 /* button */
 
@@ -147,14 +152,21 @@ ul {
 }
 
 /* --------------------особенности------------------ */
-.features-container {
-	max-width: 270px;
+.list.features-container {
+	display: flex;
+	flex-basis: 270px;
+
+	justify-content: space-between;
+}
+.feature-box {
+	/* max-width: 270px; */
 }
 
-.features {
-	padding: 94px 215px;
+.features-page {
+	padding-bottom: 0;
 }
-.features .title {
+
+.features-page .title {
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
@@ -166,9 +178,7 @@ ul {
 }
 
 /* --------------Чем мы занимаемся------------- */
-.img-work {
-	margin-bottom: 94px;
-}
+
 .work .title {
 	font-size: 36px;
 	line-height: 1.17;
@@ -181,7 +191,6 @@ ul {
 	line-height: 1.17;
 	text-align: center;
 	margin-bottom: 50px;
-	padding-top: 94px;
 }
 
 .team {
@@ -206,7 +215,6 @@ ul {
 	height: 368px;
 }
 .team-list {
-	padding-bottom: 94px;
 }
 
 /* ----------------------footer-------------------- */
