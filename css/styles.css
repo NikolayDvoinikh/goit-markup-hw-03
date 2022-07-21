@@ -34,12 +34,11 @@ ul {
 	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	outline: tomato solid;
+	/* outline: tomato solid; */
 }
 .section {
 	padding-top: 94px;
 	padding-bottom: 94px;
-	/* outline: #188ce8 solid; */
 }
 
 /* скрытые заголовки */
@@ -135,7 +134,6 @@ img {
 	padding-bottom: 0;
 	padding-top: 0;
 }
-/* ПОСТАВИЛ ДЛЯ ВИДИМОСТИ ТЕКСТА */
 
 .hero-container {
 	padding-top: 200px;
@@ -180,9 +178,6 @@ img {
 	display: flex;
 	gap: 30px;
 }
-.feature-box {
-	/* max-width: 270px; */
-}
 
 .features-page {
 	padding-bottom: 0;
@@ -223,9 +218,7 @@ img {
 .team {
 	background-color: #f5f4fa;
 }
-/* .img-team {
-	margin-bottom: 30px; */
-}
+
 .title.name {
 	font-weight: 500;
 	font-size: 16px;
@@ -237,27 +230,34 @@ img {
 	font-size: 16px;
 	line-height: 1.19;
 	text-align: center;
-	/* padding-bottom: 30px; */
 }
 .team-item {
 	flex-basis: calc(100% / 4);
 	height: auto;
-	outline: 1px solid tomato;
 }
 .team-list {
 	display: flex;
 	gap: 30px;
 }
 
-/* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+.team-content {
+	padding: 30px 59px;
+}
+.team-container {
+	background-color: #ffffff;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team-container:hover,
+.team-container:focus {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 /* ----------------------footer-------------------- */
 .footer {
 	background-color: #2f303a;
-
 	padding-top: 60px;
 }
-/* ПОСТАВИЛ ДЛЯ ВИДИМОСТИ ТЕКСТА */
 
 .footer-logo {
 	margin-bottom: 20px;
@@ -295,8 +295,10 @@ img {
 
 /* -----------------PORTFOLIO---------------*/
 .filter {
-	padding-top: 94px;
-	padding-bottom: 50px;
+	padding-bottom: 54px;
+	display: flex;
+	justify-content: center;
+	gap: 8px;
 }
 .button {
 	background-color: #f5f4fa;
@@ -308,6 +310,9 @@ img {
 	line-height: 1.62;
 	text-align: center;
 	letter-spacing: 0.03em;
+	border-radius: 4px;
+	border: transparent;
+	padding: 6px 22px;
 }
 .button:hover,
 .button:focus {
@@ -318,7 +323,7 @@ img {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
-	/* margin-bottom: 4px; */
+	margin-bottom: 4px;
 }
 .projects-link {
 	color: currentColor;
@@ -328,10 +333,22 @@ img {
 	font-size: 16px;
 	line-height: 1.88;
 }
-/* .filter-foto {
-	display: inline-block;
-	margin-bottom: 20px;
-} */
+
 .filter-text-container {
 	padding: 20px 24px;
+}
+.projects-list {
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+.projects-item {
+	flex-basis: calc(100% / 3);
+	max-width: 370px;
+	max-height: 404px;
+	border: 1px solid #eeeeee;
+}
+.portfolio-container {
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
